@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Archivos</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <!-- Incluir FileSaver.js desde CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.worker.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+            <!-- Formulario para subir archivos -->
+            <h2 id="file-manager-title">Gestor de Archivos</h2>
+            <form id="file-upload-form" enctype="multipart/form-data">
+                <input type="file" name="file" id="file">
+                <button type="submit">Subir Archivo</button>
+                <p id="upload-status"></p>
+            </form>
+
+            <!-- Tabla para mostrar archivos -->
+            <table id="file-table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Tipo</th>
+                        <th>Fecha de Subida</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="file-table-body"></tbody>
+            </table>
+
+            <!-- Incluir el script principal -->
+            <script src="../jva/archivos.js"></script>
+    </div>
+</body>
+</html>

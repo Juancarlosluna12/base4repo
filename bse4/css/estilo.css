@@ -1,0 +1,60 @@
+
+.empleado-card {
+    background: #505050;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+}
+.empleado-foto {
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.empleado-info {
+    display: flex;
+    flex-direction: column;
+}
+.empleado-nombre {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.empleado-id {
+    font-size: 0.9em;
+    color: #999;
+}
+.empleado-rol, .empleado-contacto, .empleado-correo {
+    font-size: 1em;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.pagination li {
+    margin: 0 5px;
+}
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+}
+.search-container input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+.search-container button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+.filter-container select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+ 

@@ -1,0 +1,247 @@
+
+.empleado-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+}
+.empleado-foto {
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.empleado-info {
+    display: flex;
+    flex-direction: column;
+}
+.empleado-nombre {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.empleado-id {
+    font-size: 0.9em;
+    color: #999;
+}
+.empleado-rol, .empleado-contacto, .empleado-correo {
+    font-size: 1em;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.pagination li {
+    margin: 0 5px;
+}
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+}
+.search-container input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.search-container button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+.filter-container select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+ 
+
+#--------------------------------------------Clientes-------------------------------------------------------------------
+
+
+/* Agrega estilos similares a los de empleados para la visualización de clientes */
+
+
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px; /* Ajusta el margen inferior según lo necesites */
+}
+
+.table-striped tbody tr:hover {
+    background-color: initial; /* o el color que desees */
+}
+
+.table-striped thead {
+    background-color: #f2f2f2; /* Color de fondo del encabezado */
+}
+
+
+.filters input,
+.filters select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 48%;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+.cliente-foto {
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.proveedor-foto {
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+#-------------------------------------archivos--------------------------------------------------------------------------
+
+#file-manager-container {
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+#file-manager-title {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+#file-upload-container {
+    margin: 20px 0;
+}
+
+#file-upload-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#file-input-label {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #555;
+}
+
+#file-input {
+    margin-bottom: 10px;
+}
+
+#upload-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#upload-button:hover {
+    background-color: #45a049;
+}
+
+#upload-status {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #ff0000;
+    text-align: center;
+}
+
+#file-list-container {
+    margin-top: 20px;
+}
+
+#file-list-title {
+    text-align: center;
+    color: #333;
+}
+
+#file-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#file-table th, #file-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#file-table th {
+    background-color: #f2f2f2;
+}
+
+#file-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+.file-action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.file-action-buttons button {
+    padding: 5px 10px;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.file-action-buttons .delete-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+}
+
+.file-action-buttons .delete-button:hover {
+    background-color: #e53935;
+}
+
+.file-action-buttons .share-button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+}
+
+.file-action-buttons .share-button:hover {
+    background-color: #007bb5;
+}

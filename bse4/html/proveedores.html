@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de proveedores</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Directorio de proveedores</h1>
+        <div class="filters">
+            <input type="text" id="search-proveedores-input" placeholder="Buscar por ID o nombre">
+            <select id="filter-proveedores-cuenta">
+                <option value="">Filtrar por estado de cuenta</option>
+            </select>
+        </div>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Foto</th>
+                        <th>Nombre</th>
+                        <th>ID</th>
+                        <th>Teléfono</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody id="proveedoresBody">
+                    <!-- Las filas se llenarán dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+        <button id="show-all-button" class="btn btn-secondary">Mostrar todos</button>
+    </div>
+
+    <script src="../jva/proveedores.js"></script>
+</body>
+</html>
